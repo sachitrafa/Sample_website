@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="/static/css/bootnavbar.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<link rel="stylesheet" href="/static/css/styling.css">
+<link rel="stylesheet" href="/static/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/aos.css">
+
+
+    <title>Reacha</title>
+    <meta name="description" content="Multi level hover dropdown Navbar for bootstrap 4">
+    <meta name="keywords" content="Multi level hover dropdown Navbar for bootstrap 4">
+    <style>
+       @media screen and (max-width: 1920px){
+    
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 800px;
+        }
+      }
+     @media screen and (max-width: 992px){
+    
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 400px;
+        }
+      }
+    @media screen and (max-width: 600px) {
+
+        .howwedo-img{
+          width:300px;
+          height:auto;
+        }
+         .my-gallery{
+          height: 400px;
+        }
+     
+}
+    .carousel-inner img {
+    width: 100%;
+    height: 100%
+    }
+
+    #custCarousel .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+
+    .carousel-item img {
+        width: 100%
+    }
+    
+</style>
+
+</head>
+
+
+<body>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="H8b8hcIs"></script>
+
+<!--MODALS-->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #f0be07;font-family: Nunito" id="main_navbar">
+        <a class="navbar-brand mr-3" href="#">
+            <img src="/static/images/reachahlogo.png"  width="50" height="80">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" style="font-family: Nunito;">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> <span style="color:black;font-weight:bold;font-size:18px;">Home</span> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> <span style="color:black;font-weight:bold;font-size:18px;">About Us</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" style="color:black;"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span style="color:black;font-weight: bold;font-size: 18px;">Projects</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-family: Nunito">
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Education
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown2">
+                                            <li><a class="dropdown-item" href="/project/education/rec">REC Project Learn</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/villagesports">Village Sports</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/ndpl">NDPL Power Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/tatapowerenergyclub">Tata Energy Project Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/sameerclub">Sameer Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/maitreyaclub">Maitreya Club</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/education/tatatelservices">Tata Teleservices</a></li>
+                                                                                   </ul>
+                        </li>
+                       <div class="dropdown-divider"></div>
+
+                        <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Livelihood
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown3">
+                                            <li><a class="dropdown-item" href="/project/livelihood/legenpact">Livelihood Enhacement</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/musicandculture">Music & Culture</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/drugde">Drug De-Addiction</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/urirehabilation">Uri Rehabilation</a></li>
+                                            <div class="dropdown-divider"></div>
+                                            <li><a class="dropdown-item" href="/project/livelihood/fashion">Fashion,Retail & Hospitality</a></li>
+
+                                        </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+
+                         <li class="nav-item dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Design Impact Movement
+                                        </a>
+                                        <ul class="dropdown-menu left" aria-labelledby="navbarDropdown4">
+                                            <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+
+
+                                        </ul>
+                        </li>
+                         <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="/project/kojo">Kojo For Education & Livelihood</a></li>
+                    </ul>
+                </li>
+                 <li class="nav-item dropdown">
+                     <a  style="color:black" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;">StakeHolders</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Partners</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="#">Association</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="#">Accredition</a></li>
+                    </ul>
+                </li>
+                 <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;"> Adovacy</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Knowledge Bank</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="#">Publications</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="#">Toolkit</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             <span style="color:black;font-weight:bold;font-size:18px;">Media & Gallery</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Media Coverage</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="#">Recogition</a></li>
+                        <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="#">Gallery</a></li>
+                    </ul>
+                </li>
+
+
+                 <li class="nav-item dropdown">
+                     <a style="color:black;" class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="color:black;font-weight:bold;font-size:18px;"> Contact Us</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Volunteer Us</a></li>
+                                                                    <div class="dropdown-divider"></div>
+
+                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+<section style="margin-top: 110px;">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid"  src="/static/images/cambanner.png"  alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter10" style="font-family: Nunito">Learn More</button>
+        </div>
+    </div>   
+</div>
+</div>
+</section>
+
+    <section style="background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.9)),url('/static/images/musicc.jpeg');background-repeat: no-repeat;background-size: cover;background-position: top;background-attachment: fixed;">
+          <div class="container">
+              <div class="row justify-content-center" data-aos="fade-right" style="padding-top:3%;" >
+                  <h1 style="font-family: Nunito">ABOUT<span style="color: mediumseagreen;margin-top:3%;"> THE PROJECT</span></h1>
+              </div>
+              <div class="row justify-content-center" data-aos="fade-right" style="border: 2px solid black;padding: 10px">
+                <p data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">
+                  Project Title: Education programme for youth: Inculcation of Cultural Values/ Enrichment and Personality Development of 60 nos. Kashmiri youth   
+<br>
+ 
+
+Project Goal: Constructive engagement with youth of Baramulla through education of art/music/culture – to give them a voice/expression, de-stress them and encourage them towards positive & healthy life<br>
+Objectives: <br>
+          <ul>
+            <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To provide a platform for local youth to showcase their hidden talent in music</li>
+            <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To provide basic training of 6 months to local youth on different musical instruments.</li>
+            <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To provide opportunities for local aspiring singers</li>
+            <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To promote Kashmiri Sufi Music which is based on peace and brotherhood – develop this further to strengthen efforts at counterinsurgency through peaceful means.</li>
+            <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To provide a source of entertainment for local youth to avoid their involvement in subversive activities like stone pelting and drug addiction.</li>
+            <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To promote cultural values among younger generation of Kashmiris.</li>
+            <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To provide martial arts training to youth to constructively channelize their energies.</li>
+  <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">To provide soft skills in English – for overall personality development.</li>
+  <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;">Utilizing music/art/culture for de-stressing the youth and taking them away from mental health disorder situations.</li>
+  <li data-aos="fade-right" style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;"> Explore opportunities for incremental livelihood enhancement of youth based on above.</li>
+          </ul> 
+<div class="row">
+  <div class="col-lg-12 col-md-12">
+    <p style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;" data-aos="fade-left">
+    Target Beneficiaries and Area covered: Youth in district Baramulla through intervention at the existing Chinar 9 Jawan Club <br>
+
+ 
+
+Target Beneficiaries: 60 nos. in 2 nos. batches of 30 nos. each. Batch duration = 6 months.
+  </p>
+  </div>
+</div>
+<div class="row" style="padding-bottom: 2%;">
+<div class="col-md-6 col-lg-6">
+<img src="/static/images/musicab1.JPG" class="img-fluid">
+</div>
+<div class="col-lg-6 col-md-6">
+  <img src="/static/images/musicab3.jpeg" class="img-fluid">
+</div>
+</div>
+
+<p style="color:rgba(108, 122, 137, 1);font-family: Nunito;font-size: 21.5px;" data-aos="fade-right">The armed conflict in Kashmir valley has led to demise and displacement of people, destruction of infrastructure, and crumbling of support systems, etc. The general consequences of armed conflict in Kashmir (which started in 1947) are strife, death, loss of security and livelihood, disrupted schooling, displacement, and the like. Every section in the society has been gravely affected. The impact of this social-economic dynamics has been devastating, putting into challenge survival, development, health, and overall well-being of Kashmiri communities across the valley. Since 1989 when armed conflict started in the valley, property worth hundreds of thousands of crores has been destroyed.  
+<br>
+ 
+
+This has led to social disorder, disorganization, educational backwardness, physical and mental health deterioration, mass psychological depression, helplessness and an overall degenerated of cultural moorings. The conflict has resulted in loss of a significant number of people. According to conservative official estimates nearly 90000 people have been killed since 1989, however unofficial estimates put the figure around 125,000 (half of them were civilians). Death of any individual due to the conflict creates a huge survival challenge to the entire family - socially as well as economically.  Most alarming aspect of the conflict is that prominent victims of violence during the last two decades have been the youth. They are targets, perpetrators as well as survivors of conflict. As their childhood was lost in the incidents of armed conflict, they could not be socialized in the proper cultural and religious ethos of Kashmir – often referred to as Kashmiriat. During the last two decades the Kashmir society has scattered, leaving children either orphaned or as half orphans. The loss of a family member has generated several problems which manifests practically in many ways in day to day life of the survivors. More commonly the widows are under psychology stress and economically dependent on the labour of their children, who are often unemployed. 
+<br>
+ 
+
+Kashmir Mental Survey 2015 conducted by Médecins Sans Frontières in collaboration with Institute of Mental Health and Neurosciences, Kashmir and Kashmir University has done a commendable job in this direction. The survey has been conducted in all the districts of Kashmir Valley, focusing mainly on most prevalent disorders like depression, anxiety disorders, and post-traumatic stress disorder. Despite a limitation of use of only screening tools in the estimation of the prevalence of these disorders, the findings confirm a serious mental health situation, with highly prevalent common mental disorders and distress having continued to increase to reach epidemic levels among the traumatized population of Kashmir, with 37% of adult males and 50% of females suffering from probable depression; 21% of males and 36% of females from a probable anxiety related disorder and 18% men and 22% women suffering from probable PTSD. 
+<br>
+ 
+
+One hopes and expects that these disturbing survey findings are sufficient enough to jolt all stakeholders from complacency and make them join hands to mobilise all possible government as well as community resources to handle the emergency situation and try to develop and strengthen comprehensive policies for promotion of mental health as well as evidence based efficient innovative programs for prevention, early identification, care and support to the people with mental disorders and their families in Kashmir. 
+<br>
+ 
+
+The last 30 years turmoil has not only killed humans but has also devastated and almost destroyed art, culture, and music in the valley. Almost all main sources of entertainment were restricted or blocked by terrorists or militancy linked separatist groups. Many prominent faces of culture and music were also lost in between the sounds of bullets and bombs. With the passage of time people became addicted to drugs due to the prevailing depressing scenario. Due to increasing level of stress and anxiety the population of drug addicts, especially the young, has been increasing to an alarming level day by day. Activities of destruction (stone pelting, protests etc.) are now being chosen as tools of entertainment and stress relieving in Kashmir.  
+
+<br> 
+
+To engage the local youth in music, art and culture is basically an attempt to provide them sources of entertainment and keep them away from subversive and anti-social activities. It has been observed that whenever Kashmiri youth gets a chance, they possess enough talent to excel in the arts. This is likely to also help them de-stress and overcome the widely prevalent mental health disorders in the region.  
+
+<br>
+
+Talented youth is being sent out online / offline for competitions, professionally performing at festivals/occasions/functions, and some of them would soon also be encouraged to become trainers, based on their talent, commitment, and aptitude. Thus, incremental livelihood enhancement opportunities are being explored. 
+
+<br> 
+
+The youth is also provided soft skills in English to further groom their personality. Computer training is also given to provide them IT enabled skills that are of use everywhere in today’s world. 
+<br>
+ 
+
+Aim of this project is not only to provide local youth opportunities of entertainment and de-stressing but is also to help in promotion of local music (Sufi music). Aim is to train 60 male and female candidates on different instruments of music and provide them wings to fly as well. Opportunities for incremental livelihood enhancement would also be explored by developing a Chinar Music Group to perform professionally at functions, events, and festivals in the area. Individual talent will also be promoted for the same.  
+<br>
+
+This initiative of Indian army with the support of ONGC has started a new beginning of promotion of art and culture in Baramulla district of the Jammu and Kashmir State. 
+
+</p>
+
+</div>
+</div>
+
+
+        </section> 
+
+
+    <section>
+        <h1> Gallery</h1>
+    <div class="container" style="margin-top:5%;margin-bottom: 10%;">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                <!-- slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active"> <img src="/static/images/musicc1.jpeg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="/static/images/musicc2.jpeg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="/static/images/musicc3.jpeg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="/static/images/musicc4.jpeg" alt="Hills"> </div>
+                    <div class="carousel-item"> <img src="/static/images/musicc5.jpeg"
+                     alt="Hills"> </div>
+                      <div class="carousel-item"> <img src="/static/images/musicc6.jpeg" alt="Hills"> </div>
+                      <div class="carousel-item"> <img src="/static/images/musicc7.JPG" alt="Hills"> </div>
+                      
+
+                </div> <!-- Left right --> <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> <!-- Thumbnails -->
+                <ol class="carousel-indicators list-inline">
+                    <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="/static/images/musicc1.jpeg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="/static/images/musicc1.jpeg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="/static/images/musicc2.jpeg" class="img-fluid"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-3" data-slide-to="3" data-target="#custCarousel"> <img src="/static/images/musicc3.jpeg" class="img-fluid"> </a> </li>
+                     <li class="list-inline-item"> <a id="carousel-selector-4" data-slide-to="4" data-target="#custCarousel"> <img src="/static/images/musicc4.jpeg" class="img-fluid"> </a> </li>
+                     <li class="list-inline-item"> <a id="carousel-selector-5" data-slide-to="5" data-target="#custCarousel"> <img src="/static/images/musicc5.jpeg" class="img-fluid"> </a> </li>
+                     <li class="list-inline-item"> <a id="carousel-selector-5" data-slide-to="5" data-target="#custCarousel"> <img src="/static/images/musicc6.jpeg" class="img-fluid"> </a> </li>
+                     <li class="list-inline-item"> <a id="carousel-selector-5" data-slide-to="5" data-target="#custCarousel"> <img src="/static/images/musicc7.JPG" class="img-fluid"> </a> </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+  
+<section>
+  <div class="flex-container"style="background: linear-gradient(rgba(0,0,0,0.9),rgba(76,76,76,0.9)),url('/static/images/musicc8.jpeg'); background-repeat: no-repeat;background-size: cover;background-attachment: fixed;background-position: center;" >
+    <div class="row" style="margin-right: 2%;margin-left: 2%">
+      <div class="col-lg-6 col-xl-6 col-mg-6" style="border: 2px solid black;">
+        <h1  style="font-family: Nunito;color: #ec268f;font-weight:bold;" data-aos="fade-right">Case Study 1</h1>
+
+        <img data-aos="fade-right" src="/static/images/musicp3.jpeg" style="width:200px;height: 300px;justify-content: center;margin-left: 35%;">
+        <p data-aos="fade-right" style="color:white;font-family: Nunito;font-size: 21.5px;padding-left: 8px;">Belonging to a common middle class family from sopore town of baramulla, Jasir is a student of class 12. Having keen interest in music, he along with his studies, decided to join the Chinar 9 jawan club and learn tabla. He soon became an expert in playing percussion instruments and impressed everyone in class. 
+
+His talent got huge appreciation when the band performed their first show at Skicc Srinagar. On 25th April, Jasir’s video was uploaded on a Facebook page of Tariq Rasool (trainer of art and culture), and the video in no time spread like wildfire.  
+
+Tariq Rasool soon got a call from the valley’s most famous Sufi musical group, Jhankaar, and they seeked information about Jasir.  
+
+Jasir was called to their office where he played tabla and mesmerized everyone. Soon after, he received a call to play table with the valley’s most illustrated Sufi singer, Sopore. He accompanied Mr Shafi Sopore in a live musical show conducted by a channel from Pune (platform light music).  
+
+Finally, all the efforts of Jasir led him to receive a contract of 3 years from the Jhankar musical group. He could finally turn his hobby into a profession now.  
+
+This was a huge achievement for Jasir as well as the Chinar 9 jawan club.  </p>
+      </div>
+      <div class="col-lg-6 col-xl-6 col-mg-6" style="border: 2px solid black;">
+        <h1  style="font-family: Nunito;color: #ec268f;font-weight:bold;" data-aos="fade-right">Case Study 2</h1>
+        <img data-aos="fade-right" src="/static/images/musicp2.jpeg" style="width:200px;height: 300px;margin-left:35%;">
+        <p data-aos="fade-right" style="color:white;font-family: Nunito;font-size: 21.5px;padding-left: 8px;">Nadeem Bashir, S/o Bashir ah dar is a native of Fatehpora barramula.  
+
+He belongs to a middle class family where his father is the sole earning member working as a class fourth government employee.  
+
+Nadeem was fond of music since childhood and would sing at various occasions in his school as well. With time, his desire to learn music grew but he was unable to find a trainer in the area.  
+
+His hunt for a trainer finally ended in January 2020 when he found about the music project started by Chinar 9 jawan club. He joined the project and worked hard under the supervision of Tariq Rasool who is a faculty of art and culture project there. 
+
+Nadeem gained recognition when on 24th April 2020, he participated in a talent hunt program organised by the J&K police at Sherwani hall, Baramullah, and stood at 2nd position among 15 other contestants. There the in-charge of a police musical band asked him to join his band and he finally got a job of SPO at J&K police.</p>
+      </div>
+
+    </div>
+    
+      
+     
+    </div>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="/static/js/bootnavbar.js" ></script>
+      <script src="/static/js/aos.js"></script>
+      <script>
+  AOS.init();
+</script>
+
+    <script>
+        $(function () {
+            $('#main_navbar').bootnavbar({
+                //option
+                //animation: false
+            });
+        })
+    </script>
+    <script>
+  (function ($) {
+  $.fn.countTo = function (options,viewCounter) {
+  if(viewCounter == 1){
+    options = options || {};
+
+    return $(this).each(function () {
+      // set options for current element
+      var settings = $.extend({}, $.fn.countTo.defaults, {
+        from:            $(this).data('from'),
+        to:              $(this).data('to'),
+        speed:           $(this).data('speed'),
+        refreshInterval: $(this).data('refresh-interval'),
+        decimals:        $(this).data('decimals')
+      }, options);
+
+      // how many times to update the value, and how much to increment the value on each update
+      var loops = Math.ceil(settings.speed / settings.refreshInterval),
+        increment = (settings.to - settings.from) / loops;
+
+      // references & variables that will change with each update
+      var self = this,
+        $self = $(this),
+        loopCount = 0,
+        value = settings.from,
+        data = $self.data('countTo') || {};
+
+      $self.data('countTo', data);
+
+      // if an existing interval can be found, clear it first
+      if (data.interval) {
+        clearInterval(data.interval);
+      }
+      data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+      // initialize the element with the starting value
+      render(value);
+
+      function updateTimer() {
+        value += increment;
+        loopCount++;
+
+        render(value);
+
+        if (typeof(settings.onUpdate) == 'function') {
+          settings.onUpdate.call(self, value);
+        }
+
+        if (loopCount >= loops) {
+          // remove the interval
+          $self.removeData('countTo');
+          clearInterval(data.interval);
+          value = settings.to;
+
+          if (typeof(settings.onComplete) == 'function') {
+            settings.onComplete.call(self, value);
+          }
+        }
+      }
+
+      function render(value) {
+        var formattedValue = settings.formatter.call(self, value, settings);
+        $self.html(formattedValue);
+      }
+    });
+  };
+  }
+
+  $.fn.countTo.defaults = {
+    from: 0,               // the number the element should start at
+    to: 0,                 // the number the element should end at
+    speed: 1000,           // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,           // the number of decimal places to show
+    formatter: formatter,  // handler for formatting the value before rendering
+    onUpdate: null,        // callback method for every time the element is updated
+    onComplete: null       // callback method for when the element finishes updating
+  };
+
+  function formatter(value, settings) {
+    return value.toFixed(settings.decimals);
+  }
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+  formatter: function (value, options) {
+    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+  }
+  });
+
+  // start all the timers
+  var viewCounter = 0;
+  $(document).on( 'scroll', function(){
+    if($('.timer').each(count).isOnScreen() && viewCounter < 2){
+      viewCounter++;
+      console.log(viewCounter);
+    }
+  });
+
+function count(options) {
+  var $this = $(this);
+  options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+  $this.countTo(options,viewCounter);
+}
+});
+
+
+// check if element visible in viewport
+$.fn.isOnScreen = function(){
+    var win = $(window);
+    var viewport = {
+        top : win.scrollTop(),
+        left : win.scrollLeft()
+    };
+    viewport.right = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+    bounds.bottom = bounds.top + this.outerHeight();
+
+    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+};
+</script>
+   <script type="text/javascript" src="/static/js/flickity.pkgd.min.js"></script>
+
+</body>
+
+</html>

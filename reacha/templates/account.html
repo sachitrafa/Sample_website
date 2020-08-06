@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<style>
+   /* Primary Styles */
+    *, *::before, *::after {
+       box-sizing: border-box;
+    }
+
+    body {
+       font-family: sans-serif;
+       font-size: 1em;
+       color: #333;
+    }
+    h1 {
+      font-size: 1.4em;
+    }
+    em {
+       font-style: normal;
+    }
+    a {
+       text-decoration: none;
+       color: inherit;
+    } 
+    /* Layout */
+    .s-layout {
+       display: flex;
+       width: 100%;
+       min-height: 100vh;
+    }
+    .s-layout__content {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex: 1;
+    }
+    /* Sidebar */
+    .s-sidebar__trigger {
+       z-index: 2;
+       position: fixed;
+       top: 0;
+       right: 0;
+       width: 4em;
+       height: 4em;
+       background: #192b3c;
+    }
+    .s-sidebar__trigger > i {
+       display: inline-block;
+       margin: 1.5em 0 0 1.5em;
+       color: #f07ab0;
+    }
+    .s-sidebar__nav {
+       position: fixed;
+       top: 0;
+       right: -176px;
+       overflow: hidden;
+       transition: all .3s ease-in;
+       width: 15em;
+       height: 100%;
+       background: #243e56;
+       color: rgba(255, 255, 255, 0.7);
+    }
+    .s-sidebar__nav:hover,
+    .s-sidebar__nav:focus,
+    .s-sidebar__trigger:focus + .s-sidebar__nav,
+    .s-sidebar__trigger:hover + .s-sidebar__nav {
+       right: 0;
+    }
+    .s-sidebar__nav ul {
+       position: absolute;
+       top: 4em;
+       left: 0;
+       margin: 0;
+       padding: 0;
+       width: 15em;
+    }
+
+    .s-sidebar__nav ul li {
+       width: 100%;
+    }
+
+    .s-sidebar__nav-link {
+       position: relative;
+       display: inline-block;
+       width: 100%;
+       height: 4em;
+    }
+
+    .s-sidebar__nav-link em {
+       position: absolute;
+       top: 50%;
+       left: 4em;
+       transform: translateY(-50%);
+    }
+
+    .s-sidebar__nav-link:hover {
+       background: #4d6276;
+    }
+
+    .s-sidebar__nav-link > i {
+       position: absolute;
+       top: 0;
+       left: 0;
+       display: inline-block;
+       width: 4em;
+       height: 4em;
+    }
+
+    .s-sidebar__nav-link > i::before {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+    }
+
+    /* Mobile First */
+    @media (min-width: 42em) {
+       .s-layout__content {
+          margin-left: 4em;
+       }
+       
+       /* Sidebar */
+       .s-sidebar__trigger {
+          width: 4em;
+       }
+       
+       .s-sidebar__nav {
+          width: 4em;
+          right: 0;
+       }
+       
+       .s-sidebar__nav:hover,
+       .s-sidebar__nav:focus,
+       .s-sidebar__trigger:hover + .s-sidebar__nav,
+       .s-sidebar__trigger:focus + .s-sidebar__nav {
+          width: 15em;
+       }
+    }
+
+    @media (min-width: 68em) {
+       .s-layout__content {
+          margin-left: 15em;
+       }
+       
+       /* Sidebar */
+       .s-sidebar__trigger {
+          display: none
+       }
+       
+       .s-sidebar__nav {
+          width: 15em;
+       }
+       
+       .s-sidebar__nav ul {
+          top: 1.3em;
+       }
+    }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" style="padding-left: 15%">
+    <img src="/static/images/REACHA HIGH RESOLUTION LOGO1.png" width="50px" height="70px" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav" style="padding-left: 5%;font-size: x-large;font-family: Nunito;font-weight: bold">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="font-family: Nunito;font-size: 20px;">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="font-family: Nunito;font-size: 20px;" href="#">Post</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="font-family: Nunito;font-size: 20px;" href="#">Blog</a>
+      </li>
+    </ul>
+  </div>
+    <span class="navbar-nav" style="padding-right: 6%;font-family: Nunito;font-weight: bold;font-size:20px;">
+        <a href="#">Logout</a>
+    </span>
+</nav>
+<section style="padding-top: 20px;">
+    <div class="container">
+  
+        <div class="row" style="padding-top: 10px;padding-bottom: 10px;">
+            <div class="col-lg-4">
+                <img src="/static/images/OUR VISIONARY FOUNDER & CHAIRMAN SRI J C PANT4.png" class="rounded-circle overlay" style="width: 250px;height: 250px;">
+            </div>
+            <div class="col-lg-6" style="font-family: Nunito;">
+                <h3 style="padding-top: 25px;font-weight: bolder">{{ current_user.username }}</h3>
+                <h3 style="font-weight: bolder">{{ current_user.email }}</h3>
+            </div>
+        </div>
+        </div>
+</section>
+  </body>
+</html>
